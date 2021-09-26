@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Cesar</title>
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/png" href="images/Cesar.png">
+</head>
+<body>
+<div class="main-container">
+    <div class="container">
+        <div class="row">
+          <div class="one-half column" style="margin-top: 15%">
+            <h1>Cifrado Cesar</h2>
+            <p>Este cifrado es un ejemplo del cifrado original de Cesar </p>
+                <textarea class="patitos" id="cadena" cols="30" rows="10" placeholder="Texto a cifrar con patitos" onkeypress="return letras(event)"></textarea>
+                <p><input type="button" class="btn" value="Cifrar" onclick="cifrar()">
+                <input type="button" class="btn" value="Descifrar" onclick="descifrar()">
+                </p>
+                <div class="resultado" id="resultado"></div>
+          </div>
+        </div>
+    </div>        
+    <div class="container">
+            <div class="row">
+                <div class="one-half column" style="margin-top: 15%">
+                    <h1>Cifrado Vigenere</h2>
+                        <p>Este cifrado es un ejemplo del cifrado original de Vigenere</p>
+                        <textarea id="cad" cols="30" rows="10" placeholder="Texto a cifrar con gatitos" onkeypress="return letras(event)"></textarea>
+                        <br>
+                        <input type="password" id="clv" class="form-input" placeholder="Clave Secreta" onkeypress="return letras(event)">
+                        <br>
+                        <input type="button" class="btn" value="Cifrar" onclick="encriptarTextoClaro()">
+        
+                        <input type="button" class="btn" value="Descifrar" onclick="desencriptarTextoClaro()">
+                        <br>
+                <div class="resultado" id="resultadoVigenere"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer>
+
+    </footer>
+    <script src="js/vigenere.js"></script>
+    <script src="js/cesar.js"></script>
+    <script src="js/validacion.js"></script>
+</body>
+</html>
